@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Letter To No One</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Homemade+Apple&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="moon"></div>
+  </div>
+
+  <div class="page">
+    <header class="site-header">
+      <h1>A Letter To No One</h1>
+      <p class="tagline">Write freely. Send it somewhere no one will read it.</p>
+    </header>
+
+    <main class="letter-scene">
+      <article class="letter-paper">
+        <div class="letter-meta">
+          <time id="letterDate"></time>
+        </div>
+        <p class="salutation">Dear no one,</p>
+        <textarea class="letter-body" placeholder="Put your words here..." rows="10" aria-label="Your letter"></textarea>
+        <p class="closing">With love,</p>
+        <div class="signature-line"></div>
+      </article>
+
+      <button id="send" type="button" class="send-btn">
+        <span class="send-icon" aria-hidden="true">✉</span>
+        Send to the moon
+      </button>
+    </main>
+
+    <div id="banner" class="banner hidden" role="status" aria-live="polite">
+      <span class="banner-moon" aria-hidden="true">🌙</span>
+      <p>Your letter is drifting toward the moon...</p>
+      <span class="banner-sub">Safe among the stars. Gone, but not forgotten by you.</span>
+    </div>
+  </div>
+
+  <footer>
+    <p>Nothing is saved. Nothing is sent. Just release.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
